@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from "react";
-import { collection, addDoc} from "firebase/firestore";
+import { collection, addDoc } from "firebase/firestore";
 import { db } from "../firebase";
 
 //creamos un contexto que es igual al estado global
@@ -82,7 +82,7 @@ const Provider = ({ children }) => {
     setProducts,
     removeProducts,
     itemsPrice,
-    resumeOrder
+    resumeOrder,
   };
 
   return <Context.Provider value={props}>{children}</Context.Provider>;

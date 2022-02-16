@@ -36,20 +36,20 @@ const KitchenOrder = () => {
           <p className={styles.clientName}>Nombre Cliente: {order.client}</p>
           <table className={styles.mainTable}>
             <thead>
-            <tr className={styles.title}>
-              <th>Productos</th>
-              <th>Cantidad</th>
-            </tr>
+              <tr className={styles.title}>
+                <th>Productos</th>
+                <th>Cantidad</th>
+              </tr>
             </thead>
             {order.order.map((item) => (
-                  <tbody key={item.id} className={styles.table}>
-                    <tr className={styles.trName}>
-                      <td>{item.name}</td>
-                    </tr>
-                    <tr className={styles.trQty}>
-                      <td>{item.qty}</td>
-                    </tr>
-                  </tbody>
+              <tbody key={item.id} className={styles.table}>
+                <tr className={styles.trName}>
+                  <td>{item.name}</td>
+                </tr>
+                <tr className={styles.trQty}>
+                  <td>{item.qty}</td>
+                </tr>
+              </tbody>
             ))}
           </table>
         </main>

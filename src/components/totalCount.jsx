@@ -6,13 +6,13 @@ import styles from "./css/totalCount.module.css";
 const TotalCount = () => {
   const globalContext = useContext(Context);
   return (
-    <div className={styles.total}>
+    <section className={styles.total}>
       {globalContext.products.length !== 0 && (
-        <div>
+        <section>
           <p>Total $ {globalContext.itemsPrice} </p>
-        </div>
+        </section>
       )}
-    </div>
+    </section>
   );
 };
 export default TotalCount;

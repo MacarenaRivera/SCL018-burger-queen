@@ -6,11 +6,11 @@ import { Kitchen } from "./components/kitchen";
 
 const App = () => {
   return (
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/waiter" element={<Waiter />} />
-        <Route path="/kitchen" element={<Kitchen />} />
-      </Routes>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/waiter" element={<Waiter />} />
+      <Route path="/kitchen" element={<Kitchen />} />
+    </Routes>
   );
 };
 
